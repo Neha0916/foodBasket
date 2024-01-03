@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" href="">
+    <script src="project1.js"></script>
+    <link rel="stylesheet" href="project1.js">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="project1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-xrBpdQ9zPRuMwS5eS6axzNLaO4XfMBoVm98d2Ld4Uq02g6lRGkdpkQccY5I2OBqSv5Zs2OWZ5M0AjpjJxjmApg==" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<!-- rating -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Include jQuery Countdown -->
+    <script src="https://cdn.rawgit.com/hilios/jQuery.countdown/2.2.0/dist/jquery.countdown.min.js"></script>
+
+</head>
+<body>
+  
+        <div class="bg-light py-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 text-center">
+                        <div class="text-lg-start text-sm-center ">
+                        <p >Super Value Deals - Save more with coupons</p>
+                        </div>
+                    </div>
+                    <div class="col-2 d-none d-lg-block">
+                        <select class="form-select form-select-sm bg-light" aria-label=".form-select-sm example">
+                            <option selected>English</option>
+                            <option value="1">Dutch</option>
+                            <!-- <option value="2">Two</option>
+                            <option value="3">Three</option> -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="py-4 border-bottom"  >
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <a class="navbar-brand" href="#">
+                            <img src="https://freshcart.codescandy.com/assets/images/logo/freshcart-logo.svg" alt="" class="d-inline-block align-text-top">
+                        </a>
+                    </div>
+                    <div class="col-7 d-none d-lg-block">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                          </form>
+                    </div>
+                    <div class="col d-flex flex-row-reverse justify-content-lg-evenly justify-content align-items-center lh-1">
+                        
+
+                      <nav class="nav navbar navbar-expand-lg navbar-light navbar-default py-0 pb-lg-4 d-sm-block d-md-none" aria-label="Offcanvas navbar large">
+                        <div class="container-fluid">
+                            
+        
+                          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button> -->
+                          <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-modal="true" aria-labelledby="offcanvasExampleLabel" role="dialog">
+                            <div class="offcanvas-header">
+                              <div >
+                                <a class="navbar-brand" href="#">
+                                  <img src="https://freshcart.codescandy.com/assets/images/logo/freshcart-logo.svg" alt="" class="d-inline-block align-text-top">
+                              </a>
+                              </div>
+                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-header">
+                              <form class="d-flex justify-content-between">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                              </form>
+                            </div>
+                            <div class="offcanvas-body text-center ">
+                              
+                              <ul class="navbar-nav row justify-content-center gap-4">
+
+                              <li class="nav-item dropdown col-md-4 offset-md-4 d-grid gap-3 ">
+                                  <a class="btn btn-secondary dropdown-toggle btn-success px-4 fw-bolder" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/1250/1250641.png" height="20px" width="20px" alt="" class="me-3 text-center text-capitalize"> All Departments
+                                  </a>
+                                
+                                  <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
+                              </li>
+                              <li class="nav-item dropdown col-md-4 offset-md-4">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Home
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </li>
+                              <li class="nav-item dropdown col-md-4 offset-md-4">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Shop
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </li>
+                              <li class="nav-item dropdown col-md-4 offset-md-4">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Stores
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </li>
+                              <li class="nav-item dropdown col-md-4 offset-md-4">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Mega menu
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </li>
+                              <li class="nav-item dropdown col-md-4 offset-md-4">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Pages
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </li>
+                              <li class="nav-item dropdown col-md-4 offset-md-4">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Account
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </li>
+                              <li class="nav-item dropdown col-md-4 offset-md-4">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  DashBoard
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </li>
+                              <li class="nav-item dropdown col-md-4 offset-md-4">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Docs
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                            </div>
+                          </div>
+                          <div class="offcanvas-backdrop fade show"></div>
+                          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            
+                          </div>
+                        </div>
+                      </nav>
+  
+
+
+                           <a href="" class="list-inline me-4"><img src="https://cdn-icons-png.flaticon.com/128/2662/2662503.png" height="20px" width="20px" alt="" class="">
+                            <span class="position-absolute top-20 start-90 translate-middle badge rounded-pill bg-success">
+                              5
+                      </span></a>
+            
+                        <a href="" class="list-inline me-4"><img src="https://cdn-icons-png.flaticon.com/128/1077/1077063.png" height="20px" width="20px" alt=""></a>  
+                        <a href="" class=" list-inline me-4 d-none d-lg-block"><img src="https://cdn-icons-png.flaticon.com/128/535/535285.png" height="20px" width="20px" alt="">
+                          <span class="position-absolute top-20 start-90 translate-middle badge rounded-pill bg-success">
+                            6
+                    </span></a>
+
+
+                    
+
+                    </div>
+                </div>
+                
+                <nav class="nav navbar navbar-expand-lg navbar-light navbar-default py-4 pb-lg-4 my-3 d-none d-lg-block" aria-label="Offcanvas navbar large">
+                    <div class="container-fluid">
+                        
+    
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                          <li class="nav-item dropdown">
+                            <div class="dropdown">
+                              <a class="btn btn-secondary dropdown-toggle btn-success px-4 fw-bolder" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://cdn-icons-png.flaticon.com/128/1250/1250641.png" height="20px" width="20px" alt="" class="me-3"> Groceries
+                              </a>
+                            
+                              <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul>
+                          </div>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Home
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Shop
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Stores
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Mega menu
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Pages
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Account
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              DashBoard
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Docs
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+            
+            <div >
+              
+            </div>
+        </div>
+
+          <div id="carouselExampleAutoplaying" class="py-lg-5 py-3 container-lg carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="containers carousel-item active" data-bs-interval="3000">
+                <img src="https://freshcart.codescandy.com/assets/images/slider/slide-1.jpg" class="d-block w-100 slick-track" width="800" height="500" alt="...">
+                <div class="d-flex flex-column justify-content-start text ">
+                  <div><p class="p-1">Opening Sale Discount 50%</p></div>
+                  <div><h2 class="top-left text-dark display-5 fw-bold mt-4">Super Market For Fresh Grocery</h2></div>
+                  <div><h6 class="bottom-left lead mt-lg-0 mt-3">Introduced a new model for online grocery shopping and convinient delivery</h6></div>
+                  <div class="btn-slider"><a href="#!" class="btn btn-dark mt-3" tabindex="0">Shop Now <span class="arrow">
+                    arrow_forward
+                    </span></a></div>
+
+                </div>
+              </div>
+  
+              <div class="containers carousel-item" data-bs-interval="3000">
+                <img src="https://freshcart.codescandy.com/assets/images/slider/slider-2.jpg" class="d-block w-100" width="800" height="500" alt="...">
+                <div class="d-flex flex-column justify-content-start text ">
+                  <div><p class="p-1">Free Shipping- orders over $100</p></div>
+                  <div><h2 class="top-left text-dark display-5 fw-bold mt-4">Free Shipping on orders over <span style="color: rgb(25, 153, 25);">$100</span></h2></div>
+                  <div><h6 class="bottom-left lead mt-lg-0 mt-3">Introduced a new model for online grocery shopping and convinient delivery</h6></div>
+                  <div class="btn-slider"><a href="#!" class="btn btn-dark mt-3" tabindex="0">Shop Now <span class="arrow">
+                    arrow_forward
+                    </span></a></div>
+
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div class="py-lg-5 py-3 container-lg">
+            <div class="row justify-content-between">
+              <div class="col-md position-relative">
+                <img src="https://freshcart.codescandy.com/assets/images/banner/grocery-banner.png" style="height: 13rem;" class="card-img-top" alt="...">
+                <div class="overlay-text">
+                  <h2 class="fw-bold mb-1">Fruits & Vegetables</h2>
+                  <p class="mb-4">Get Upto <span class="fw-bold">30%</span> Off</p>
+                  <div class="btn-slider-3">
+                    <a href="#!" class="btn btn-dark btn-sm" tabindex="0">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md mt-lg-0 mt-md-0 mt-3 position-relative">
+                <img src="https://freshcart.codescandy.com/assets/images/banner/grocery-banner-2.jpg" style="height: 13rem;" class="card-img-top" alt="...">
+                <div class="overlay-text">
+                  <h2 class="fw-bold mb-1">Freshly Baked Buns</h2>
+                  <p class="mb-4">Get Upto <span class="fw-bold">25%</span> Off</p>
+                  <div class="btn-slider-3">
+                    <a href="#!" class="btn btn-dark btn-sm" tabindex="0">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Popular products -->
+
+          <div class="container">
+            <div class="fs-3 fw-bold">Popular Products</div>
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 border-row">
+              <div class="col mt-3">
+                <div class="card h-100
+                product-card">
+                    <img src="https://freshcart.codescandy.com/assets/images/products/product-img-1.jpg" class="card-img-top" alt="...">
+              
+                  <div class="card-overlay">
+                    Sale
+                  </div>
+                  <div class="card-body">
+                    <p class="text-secondary" style="font-size: 12px;" >Snack & Munchies <br><a class="link-style card-link fw-bold fs-6 text-decoration-none " href="#" >Haldiram's Sev Bhujia</a><br>
+                      <i class="rating fas fa-star mt-2"></i>
+                      <i class="rating fas fa-star"></i>
+                      <i class="rating fas fa-star"></i>
+                      <i class="rating fas fa-star-half-alt"></i>
+                      <i class="rating far fa-star"></i> <span class="text-secondary"> 4.5(149)</span></p>
+                      <!-- Adjust the number of filled and half stars based on the rating -->
+                      <div class="row justify-content-between">
+                        <div class="col">$18 <span class="text-secondary text-decoration-line-through">$24</span></div>
+                        <div class="col text-end"><a href="#" class="btn btn-primary btn-sm bg" style="background-color: rgb(20, 186, 20); font-weight: bold;">+ Add</a></div>
+                        
+                      </div>
+                    </div>
+                </div>
+              </div>
+              
+              <div class="col mt-3">
+                <div class="card h-100
+                product-card">
+                    <img src="https://freshcart.codescandy.com/assets/images/products/product-img-2.jpg" class="card-img-top" alt="...">
+              
+                  <div class="card-overlay">
+                    Sale
+                  </div>
+                  <div class="card-body">
+                    <p class="text-secondary" style="font-size: 12px;" >Bakery & Biscuits <br><a class="link-style card-link fw-bold fs-6 text-decoration-none " href="#" >NutriChoice Digestive</a><br>
+                      <i class="rating fas fa-star mt-2"></i>
+                      <i class="rating fas fa-star"></i>
+                      <i class="rating fas fa-star"></i>
+                      <i class="rating fas fa-star-half-alt"></i>
+                      <i class="rating far fa-star"></i> <span class="text-secondary"> 4.5(25)</span></p>
+                      <!-- Adjust the number of filled and half stars based on the rating -->
+                      <div class="row justify-content-between">
+                        <div class="col">$24 </div>
+                        <div class="col text-end"><a href="#" class="btn btn-primary btn-sm bg" style="background-color: rgb(20, 186, 20); font-weight: bold;">+ Add</a></div>
+                        
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col mt-3">
+                <div class="card h-100
+                product-card">
+                    <img src="	https://freshcart.codescandy.com/assets/images/products/product-img-3.jpg
+                    " class="card-img-top" alt="...">
+              
+                  <div class="card-overlay">
+                    Sale
+                  </div>
+                  <div class="card-body">
+                    <p class="text-secondary" style="font-size: 12px;" >Bakery & Biscuits <br><a class="link-style card-link fw-bold fs-6 text-decoration-none " href="#" >Cadbury 5 Star Chocolate</a><br>
+                      <i class="rating fas fa-star mt-2"></i>
+                      <i class="rating fas fa-star"></i>
+                      <i class="rating fas fa-star"></i>
+                      <i class="rating fas fa-star"></i>
+                      <i class="rating far fa-star"></i> <span class="text-secondary"> 5 (469)</span></p>
+                      <!-- Adjust the number of filled and half stars based on the rating -->
+                      <div class="row justify-content-between">
+                        <div class="col">$32 <span class="text-secondary text-decoration-line-through">$35</span></div>
+                        <div class="col text-end"><a href="#" class="btn btn-primary btn-sm bg" style="background-color: rgb(20, 186, 20); font-weight: bold;">+ Add</a></div>
+                        
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col mt-3">
+                <div class="card h-100
+                product-card">
+                    <img src="https://freshcart.codescandy.com/assets/images/products/product-img-4.jpg" class="card-img-top" alt="...">
+              
+                  <div class="card-overlay">
+                    Sale
+                  </div>
+                  <div class="card-body">
+                    <p class="text-secondary" style="font-size: 12px;" >Snack & Munchies <br><a class="link-style card-link fw-bold fs-6 text-decoration-none " href="#" >Onion Flavour Potato</a><br>
+                      <i class="rating fas fa-star mt-2"></i>
+                      <i class="rating fas fa-star"></i>
+                      <i class="rating fas fa-star-half-alt"></i>
+                      <i class="rating far fa-star"></i>
+                      <i class="rating far fa-star"></i> <span class="text-secondary"> 3.5(456)</span></p>
+                      <!-- Adjust the number of filled and half stars based on the rating -->
+                      <div class="row justify-content-between">
+                        <div class="col">$3<span class="text-secondary text-decoration-line-through">$5</span></div>
+                        <div class="col text-end"><a href="#" class="btn btn-primary btn-sm bg" style="background-color: rgb(20, 186, 20); font-weight: bold;">+ Add</a></div>
+                        
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col mt-3">
+                <div class="card h-100
+                product-card">
+                    <img src="https://freshcart.codescandy.com/assets/images/products/product-img-5.jpg" class="card-img-top" alt="...">
+              
+                  <div class="card-overlay">
+                    Sale
+                  </div>
+                  <div class="card-body">
+                    <p class="text-secondary" style="font-size: 12px;" >Instant Food <br><a class="link-style card-link fw-bold fs-6 text-decoration-none " href="#" >Salted Instant Popcorn</a><br>
+                      <i class="rating fas fa-star mt-2"></i>
+                      <i class="rating fas fa-star"></i>
+                      <i class="rating fas fa-star"></i>
+                      <i class="rating fas fa-star-half-alt"></i>
+                      <i class="rating far fa-star"></i> <span class="text-secondary"> 4.5(39)</span></p>
+                      <!-- Adjust the number of filled and half stars based on the rating -->
+                      <div class="row justify-content-between">
+                        <div class="col">$13 <span class="text-secondary text-decoration-line-through">$18</span></div>
+                        <div class="col text-end"><a href="#" class="btn btn-primary btn-sm bg" style="background-color: rgb(20, 186, 20); font-weight: bold;">+ Add</a></div>
+                        
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col mt-3">
+                <div class="card h-100
+                product-card">
+                    <img src="https://freshcart.codescandy.com/assets/images/products/product-img-6.jpg" class="card-img-top" alt="...">
+              
+                  <div class="card-overlay">
+                    Sale
+                  </div>
+                  <div class="card-body">
+                    <p class="text-secondary" style="font-size: 12px;" >Dairy, Bread & Eggs <br><a class="link-style card-link fw-bold fs-6 text-decoration-none " href="#" >Blueberry Greek Yogurt</a><br>
+                      <i class="rating fas fa-star mt-2"></i>
+                      <i class="rating fas fa-star"></i>
+                      <i class="rating fas fa-star"></i>
+                      <i class="rating fas fa-star-half-alt"></i>
+                      <i class="rating far fa-star"></i> <span class="text-secondary"> 4.5(189)</span></p>
+                      <!-- Adjust the number of filled and half stars based on the rating -->
+                      <div class="row justify-content-between">
+                        <div class="col">$18 <span class="text-secondary text-decoration-line-through">$24</span></div>
+                        <div class="col text-end"><a href="#" class="btn btn-primary btn-sm bg" style="background-color: rgb(20, 186, 20); font-weight: bold;">+ Add</a></div>
+                        
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col mt-3">
+                <div class="card h-100
+                product-card">
+                    <img src="https://freshcart.codescandy.com/assets/images/products/product-img-7.jpg" class="card-img-top" alt="...">
+              
+                  <div class="card-overlay">
+                    Sale
+                  </div>
+                  <div class="card-body">
+                    <p class="text-secondary" style="font-size: 12px;" >Dairy, Bread & Eggs <br><a class="link-style card-link fw-bold fs-6 text-decoration-none " href="#" >Britannia Cheese Slices</a><br>
+                      <i class="rating fas fa-star mt-2"></i>
+                      <i class="rating fas fa-star"></i>
+                      <i class="rating fas fa-star"></i>
+                      <i class="rating fas fa-star"></i>
+                      <i class="rating far fa-star"></i> <span class="text-secondary"> 5(345)</span></p>
+                      <!-- Adjust the number of filled and half stars based on the rating -->
+                      <div class="row justify-content-between">
+                        <div class="col">$24 </div>
+                        <div class="col text-end"><a href="#" class="btn btn-primary btn-sm bg" style="background-color: rgb(20, 186, 20); font-weight: bold;">+ Add</a></div>
+                        
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col mt-3">
+                <div class="card h-100
+                product-card">
+                    <img src="https://freshcart.codescandy.com/assets/images/products/product-img-8.jpg" class="card-img-top" alt="...">
+              
+                  <div class="card-overlay">
+                    Sale
+                  </div>
+                  <div class="card-body">
+                    <p class="text-secondary" style="font-size: 12px;" >Instant Food <br><a class="link-style card-link fw-bold fs-6 text-decoration-none " href="#" >Kellogg's Original Cereals</a><br>
+                      <i class="rating fas fa-star mt-2"></i>
+                      <i class="rating fas fa-star"></i>
+                      <i class="rating fas fa-star"></i>
+                      <i class="rating far fa-star"></i>
+                      <i class="rating far fa-star"></i> <span class="text-secondary"> 4(90)</span></p>
+                      <!-- Adjust the number of filled and half stars based on the rating -->
+                      <div class="row justify-content-between">
+                        <div class="col">$32 <span class="text-secondary text-decoration-line-through">$35</span></div>
+                        <div class="col text-end"><a href="#" class="btn btn-primary btn-sm bg" style="background-color: rgb(20, 186, 20); font-weight: bold;">+ Add</a></div>
+                        
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col mt-3">
+                <div class="card h-100
+                product-card">
+                    <img src="https://freshcart.codescandy.com/assets/images/products/product-img-9.jpg" class="card-img-top" alt="...">
+              
+                  <div class="card-overlay">
+                    Sale
+                  </div>
+                  <div class="card-body">
+                    <p class="text-secondary" style="font-size: 12px;" >Snack & Munchies <br><a class="link-style card-link fw-bold fs-6 text-decoration-none " href="#" >Slurrp Millet Chocolate</a><br>
+                      <i class="rating fas fa-star mt-2"></i>
+                      <i class="rating fas fa-star"></i>
+                      <i class="rating fas fa-star"></i>
+                      <i class="rating fas fa-star-half-alt"></i>
+                      <i class="rating far fa-star"></i> <span class="text-secondary"> 4.5(67)</span></p>
+                      <!-- Adjust the number of filled and half stars based on the rating -->
+                      <div class="row justify-content-between">
+                        <div class="col">$3 <span class="text-secondary text-decoration-line-through">$5</span></div>
+                        <div class="col text-end"><a href="#" class="btn btn-primary btn-sm bg" style="background-color: rgb(20, 186, 20); font-weight: bold;">+ Add</a></div>
+                        
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col mt-3">
+                <div class="card h-100
+                product-card">
+                    <img src="https://freshcart.codescandy.com/assets/images/products/product-img-10.jpg" class="card-img-top" alt="...">
+              
+                  <div class="card-overlay">
+                    Sale
+                  </div>
+                  <div class="card-body">
+                    <p class="text-secondary" style="font-size: 12px;" >Dairy, Bread & Eggs <br><a class="link-style card-link fw-bold fs-6 text-decoration-none " href="#" >Amul Butter-500 g</a><br>
+                      <i class="rating fas fa-star mt-2"></i>
+                      <i class="rating fas fa-star"></i>
+                      <i class="rating fas fa-star-half-alt"></i>
+                      <i class="rating far fa-star"></i>
+                      <i class="rating far fa-star"></i> <span class="text-secondary"> 3.5(89)</span></p>
+                      <!-- Adjust the number of filled and half stars based on the rating -->
+                      <div class="row justify-content-between">
+                        <div class="col">$13 <span class="text-secondary text-decoration-line-through">$18</span></div>
+                        <div class="col text-end"><a href="#" class="btn btn-primary btn-sm bg" style="background-color: rgb(20, 186, 20); font-weight: bold;">+ Add</a></div>
+                        
+                      </div>
+                    </div>
+                </div>
+              </div>              
+            </div>
+          </div>
+      
+
+          <!-- Section 4 big cards -->
+
+          <div class="container">
+            <div class="fs-3 fw-bold">Daily Best Sells</div>
+            <div class="row">
+
+              <div class="col">
+                <div class="bg-image card shadow-1-strong h-100"     style="background-image: url('https://freshcart.codescandy.com/assets/images/banner/banner-deal.jpg'); padding-top: 14px; padding-left: 10px;">
+                <div class="card-body text-white">
+                <h4 class="card-title"><p class="fw-bolder">100% Organic Coffee<br>Beans.</p></h4>
+                <p class="card-text">
+                Get the best deal before close.
+                </p>
+                <a href="#!" class="btn btn-outline-light" style="background-color: rgb(42, 184, 42);">Shop Now <span class="arrow">
+                  arrow_forward
+                  </span></a>
+                </div>
+                </div>
+
+              </div>
+
+              <div class="col">
+                <div class="card h-100
+                product-card">
+                    <img src="https://freshcart.codescandy.com/assets/images/products/product-img-11.jpg" class="card-img-top" alt="...">
+              
+                  <div class="card-body">
+                    <p class="text-secondary" style="font-size: 12px;" >Tea, Coffee & Drinks <br><a class="link-style card-link fw-bold fs-6 text-decoration-none " href="#" >Roast Ground Coffee</a></p>
+                      <!-- Adjust the number of filled and half stars based on the rating -->
+                      <div class="row justify-content-between">
+                        <div class="col">$13 <span class="text-secondary text-decoration-line-through">$18</span></div>
+                        <div class="col">
+                          <p><i class="rating fas fa-star mt-2"></i> <i class="rating fas fa-star"></i> <i class="rating fas fa-star"></i> <i class="rating fas fa-star-half-alt"></i> <i class="rating far fa-star"></i><span class="text-secondary"> 4.5</span></p>
+                        </div>
+                         </div>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-sm bg" style="background-color: rgb(20, 186, 20); font-weight: bold;">+ Add</a>
+
+                    <div class="d-flex justify-content-start text-center mt-3">
+                      <div class="deals-countdown w-100 d-flex justify-content-center align-items-center" data-countdown="2028/10/10 00:00:00"><span class="countdown-section"><span class="countdown-amount hover-up">1745</span><span class="countdown-period"> days </span></span><span class="countdown-section"><span class="countdown-amount hover-up">1</span><span class="countdown-period"> hours </span></span><span class="countdown-section"><span class="countdown-amount hover-up">45</span><span class="countdown-period"> mins </span></span><span class="countdown-section"><span class="countdown-amount hover-up">18</span><span class="countdown-period"> sec </span></span></div>
+                   </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100
+                product-card">
+                    <img src="https://freshcart.codescandy.com/assets/images/products/product-img-12.jpg" class="card-img-top" alt="...">
+
+                  <div class="card-body">
+                    <p class="text-secondary" style="font-size: 12px;" >Fruits & Vegetables<br><a class="link-style card-link fw-bold fs-6 text-decoration-none " href="#" >Crushed Tomatoes</a></p>
+                      <!-- Adjust the number of filled and half stars based on the rating -->
+                      <div class="row justify-content-between">
+                        <div class="col">$13 <span class="text-secondary text-decoration-line-through">$18</span></div>
+                        <div class="col">
+                          <p><i class="rating fas fa-star mt-2"></i> <i class="rating fas fa-star"></i> <i class="rating fas fa-star"></i> <i class="rating fas fa-star-half-alt"></i> <i class="rating far fa-star"></i><span class="text-secondary"> 4.5</span></p>
+                        </div>
+                         </div>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-sm bg" style="background-color: rgb(20, 186, 20); font-weight: bold;">+ Add</a>
+                    <div class="d-flex justify-content-start text-center mt-3">
+                      <div class="deals-countdown w-100 d-flex justify-content-center align-items-center" data-countdown="2028/10/10 00:00:00"><span class="countdown-section"><span class="countdown-amount hover-up">1745</span><span class="countdown-period"> days </span></span><span class="countdown-section"><span class="countdown-amount hover-up">1</span><span class="countdown-period"> hours </span></span><span class="countdown-section"><span class="countdown-amount hover-up">45</span><span class="countdown-period"> mins </span></span><span class="countdown-section"><span class="countdown-amount hover-up">18</span><span class="countdown-period"> sec </span></span></div>
+                   </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 w-100
+                product-card">
+                    <img src="https://freshcart.codescandy.com/assets/images/products/product-img-13.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="text-secondary" style="font-size: 12px;" >Fruits & Vegetables<br><a class="link-style card-link fw-bold fs-6 text-decoration-none " href="#" >Golden Pineapple</a></p>
+                        <!-- Adjust the number of filled and half stars based on the rating -->
+                        <div class="row justify-content-between">
+                          <div class="col">$13 <span class="text-secondary text-decoration-line-through">$18</span></div>
+                          <div class="col">
+                            <p><i class="rating fas fa-star mt-2"></i> <i class="rating fas fa-star"></i> <i class="rating fas fa-star"></i> <i class="rating fas fa-star-half-alt"></i> <i class="rating far fa-star"></i><span class="text-secondary"> 4.5</span></p>
+                          </div>
+                           </div>
+                      </div>
+                      <a href="#" class="btn btn-primary btn-sm bg" style="background-color: rgb(20, 186, 20); font-weight: bold;">+ Add</a>
+                      <div class="d-flex justify-content-start text-center mt-3">
+                        <div class="deals-countdown w-100 d-flex justify-content-center align-items-center" data-countdown="2028/10/10 00:00:00"><span class="countdown-section"><span class="countdown-amount hover-up">1745</span><span class="countdown-period"> days </span></span><span class="countdown-section"><span class="countdown-amount hover-up">1</span><span class="countdown-period"> hours </span></span><span class="countdown-section"><span class="countdown-amount hover-up">45</span><span class="countdown-period"> mins </span></span><span class="countdown-section"><span class="countdown-amount hover-up">18</span><span class="countdown-period"> sec </span></span></div>
+                     </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Bootstrap js added -->
+
+          <!-- Popular products rating -->
+
+          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function() {
+            // Set the target date for the countdown
+            var targetDate = new Date('2028/10/10 00:00:00');
+
+            // Initialize the countdown
+            $('.deals-countdown').countdown(targetDate, function(event) {
+                // Display the countdown values
+                $(this).html(
+                    event.strftime('%D days %H:%M:%S')
+                );
+            });
+        });
+    </script>
+    
+</body>
+</html>
